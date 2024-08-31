@@ -14,6 +14,8 @@ body
 	min-height: 100vh;
 	flex-direction: column;
 	background-image: url("LOGIN\ PAGE\ IMAGE.jpg");
+	background-size: contain;
+
 }
 .box 
 {
@@ -21,7 +23,7 @@ body
 	width: 380px;
 	height: 420px;
 	background: #FFE4C4;
-	border-radius: 8px;
+	border-radius: 28px;
 	overflow: hidden;
 }
 .box::before 
