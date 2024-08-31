@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <link rel="shortcut icon" href="img/short.jpeg" type="image/png">
+
+         <!-- =============== MAP LINKS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+        <!-- =============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+         
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="home page.css">
+
+        <title>SacredSands</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"><b>Incredible India</b></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#tour" class="nav__link">Video Tour</a>
+                        </li> -->
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="img/xyz.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle"></span>
+                        <h1 class="home__data-title">Explore the <br>  <b>rich cultural heritage  <br>of India </b></h1>
+                        <a href="https://indianculture.gov.in" class="button">Explore</a>
+
+                    </div>
+
+                    
+
+                    <!-- <div class="home__social">
+                        <a href="https://www.facebook.com/" target="blank" class="home_social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="blank" class="home_social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="blank" class="home_social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div> -->
+
+              <!-- .     <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="abc3.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section_title about_title"><b>More Information <br> About Indian Culture</h2>
+                        <br></b>
+                        <p class="about__description">Indian culture and heritage is a rich tapestry of traditions, languages, customs, and art forms that have evolved over thousands of years. Known for its diversity, India is home to numerous ethnic groups, each contributing to the nation’s vibrant cultural landscape. Festivals like Diwali, Holi, and Eid showcase the spirit of unity in diversity, while classical music, dance forms like Bharatanatyam and Kathak, and intricate crafts like weaving and pottery reflect India’s artistic heritage. Temples, mosques, forts, and palaces stand as testaments to the country’s architectural brilliance and historical legacy. Indian culture is deeply rooted in values of respect, hospitality, and spirituality, creating a unique blend of ancient wisdom and modern innovation.
+                        </p>
+                        <a href="https://www.incredibleindia.org/" class="button">Read more</a>
+                     
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="img/diwali.jpeg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="img/dance.jpeg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover <br> </h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="img/ladoo.jpeg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Foods</h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="img/attire.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Attire</h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="img/indianmusic.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Sounds</h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="img/holi.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Festivals</h2>
+                                <span class="discover__description"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <!-- <section class="experience section"> -->
+                <!-- <h2 class="section__title">With Our Experience <br> We Will Serve You</h2> -->
+
+                <!-- <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">20</h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">75</h2>
+                            <span class="experience__description">Complete <br> tours</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">Tourist <br> Destination</span>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </section> -->
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video highlighting the beauty of culture 
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="vid/v1.mp4" type="video/mp4"> 
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <!-- <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place</h2> -->
+
+                <!-- <div class="place__container container grid"> -->
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bali</h3>
+                                <span class="place__subtitle">Indonesia</span>
+                                <span class="place__price">$2499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bora Bora</h3>
+                                <span class="place__subtitle">Polinesia</span>
+                                <span class="place__price">$1599</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hawaii</h3>
+                                <span class="place__subtitle">EE.UU</span>
+                                <span class="place__price">$3499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Whitehaven</h3>
+                                <span class="place__subtitle">Australia</span>
+                                <span class="place__price">$2499</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div> -->
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <!-- <div class="place__card">
+                        <img src="place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Hvar</h3>
+                                <span class="place__subtitle">Croacia</span>
+                                <span class="place__price">$1999</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== SUBSCRIBE ====================-->
+            <!-- <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section_title subscribe_title">Subscribe Our <br> Newsletter</h2>
+                        <p class="subscribe__description">Subscribe to our newsletter and get a 
+                            special 30% discount.
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+    
+                            <button class="button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+             -->
+            <!--==================== SPONSORS ====================-->
+            <!-- <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+        </main> -->
+
+         <!-- =============== MAP ===============-->
+        
+    <style>
+        h3{
+            text-align: center;
+        }
+
+        #map {
+            height: 400px;
+            width: 60%;
+            margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .city-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .city-list li {
+            margin: 5px 0;
+            padding: 10px;
+            /* background-color:; */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .city-list li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Explore Indian State Capitals and Their Culture</h3>
+<br>
+
+<!-- The map container -->
+<div id="map"></div>
+
+<!-- City List -->
+<ul class="city-list">
+    <li onclick="zoomToCity('Hampi', [15.3350, 76.4600])">Hampi</li>
+    <li onclick="zoomToCity('Fatehpur Sikri', [27.0937, 77.6615])">Fatehpur Sikri</li>
+    <li onclick="zoomToCity('Mandav (Mandu)', [22.3667, 75.3903])">Mandav (Mandu)</li>
+    <li onclick="zoomToCity('Chittorgarh', [24.8887, 74.6269])">Chittorgarh</li>
+    <li onclick="zoomToCity('Orchha', [25.3519, 78.6418])">Orchha</li>
+    <li onclick="zoomToCity('Pattadakal', [15.9451, 75.8185])">Pattadakal</li>
+    <li onclick="zoomToCity('Badami', [15.9149, 75.6768])">Badami</li>
+    <li onclick="zoomToCity('Mahabalipuram', [12.6208, 80.1920])">Mahabalipuram</li>
+    <li onclick="zoomToCity('Sanchi', [23.4865, 77.7352])">Sanchi</li>
+    <li onclick="zoomToCity('Bijapur (Vijayapura)', [16.8302, 75.7100])">Bijapur (Vijayapura)</li>
+    <li onclick="zoomToCity('Shillong', [25.5788, 91.8933])">Shillong</li>
+    <li onclick="zoomToCity('Tawang', [27.5860, 91.8593])">Tawang</li>
+    <li onclick="zoomToCity('Imphal', [24.8170, 93.9368])">Imphal</li>
+    <li onclick="zoomToCity('Agartala', [23.8315, 91.2868])">Agartala</li>
+    <li onclick="zoomToCity('Itanagar', [27.0844, 93.6053])">Itanagar</li>
+    <li onclick="zoomToCity('Aizawl', [23.7367, 92.7173])">Aizawl</li>
+    <li onclick="zoomToCity('Kohima', [25.6751, 94.1086])">Kohima</li>
+    <li onclick="zoomToCity('Dimapur', [25.9042, 93.7266])">Dimapur</li>
+    <li onclick="zoomToCity('Gangtok', [27.3314, 88.6138])">Gangtok</li>
+    <li onclick="zoomToCity('Tura', [25.5144, 90.2027])">Tura</li>
+    <li onclick="zoomToCity('Madurai', [9.9252, 78.1198])">Madurai</li>
+    <li onclick="zoomToCity('Thanjavur', [10.7870, 79.1378])">Thanjavur</li>
+    <li onclick="zoomToCity('Pondicherry', [11.9416, 79.8083])">Pondicherry</li>
+    <li onclick="zoomToCity('Coimbatore', [11.0168, 76.9558])">Coimbatore</li>
+    <li onclick="zoomToCity('Srirangapatna', [12.4181, 76.6947])">Srirangapatna</li>
+    <li onclick="zoomToCity('Vellore', [12.9165, 79.1325])">Vellore</li>
+    <li onclick="zoomToCity('Kanchipuram', [12.8342, 79.7036])">Kanchipuram</li>
+</ul>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+<script>
+    // Sample cultural data for Indian state capitals
+    const culturalData = {
+        "Hampi": {
+        "culture": "Hampi, a UNESCO World Heritage Site, was the capital of the Vijayanagara Empire. It is known for its ruins, temples, and royal complexes."
+    },
+    "Fatehpur Sikri": {
+        "culture": "Fatehpur Sikri, built by Emperor Akbar, is famous for its stunning Mughal architecture, including the Buland Darwaza and Panch Mahal."
+    },
+    "Mandav (Mandu)": {
+        "culture": "Mandav is known for its Afghan architecture, including the Jahaz Mahal, Hindola Mahal, and the Roopmati Pavilion."
+    },
+    "Chittorgarh": {
+        "culture": "Chittorgarh is home to the Chittor Fort, one of the largest forts in India, known for its history of Rajput valor and the tale of Rani Padmini."
+    },
+    "Orchha": {
+        "culture": "Orchha, once the capital of the Bundela dynasty, is known for its palaces, temples, and the Orchha Fort complex."
+    },
+    "Pattadakal": {
+        "culture": "Pattadakal is a UNESCO World Heritage Site, known for its Chalukyan temples that blend Dravidian and Nagara architectural styles."
+    },
+    "Badami": {
+        "culture": "Badami is famous for its rock-cut temples, cave temples, and the Agastya Lake, reflecting the grandeur of the Chalukya dynasty."
+    },
+    "Mahabalipuram": {
+        "culture": "Mahabalipuram is known for its rock-cut sculptures and temples, including the Shore Temple and the Pancha Rathas."
+    },
+    "Sanchi": {
+        "culture": "Sanchi is famous for its Buddhist stupas, particularly the Great Stupa, which is a UNESCO World Heritage Site."
+    },
+    "Bijapur (Vijayapura)": {
+        "culture": "Bijapur is known for its Adil Shahi architecture, including the Gol Gumbaz and Ibrahim Rauza."
+    },
+    "Shillong": {
+        "culture": "Shillong, the capital of Meghalaya, is known for its scenic beauty, British colonial architecture, and vibrant festivals like the Shillong Autumn Festival."
+    },
+    "Tawang": {
+        "culture": "Tawang is renowned for its Buddhist monasteries, especially the Tawang Monastery, and its stunning landscapes and cultural festivals."
+    },
+    "Imphal": {
+        "culture": "Imphal is known for its rich history, the Kangla Fort, and traditional festivals like Yaoshang and the Lai Haraoba."
+    },
+    "Agartala": {
+        "culture": "Agartala, the capital of Tripura, is known for the Ujjayanta Palace and its diverse ethnic communities and festivals."
+    },
+    "Itanagar": {
+        "culture": "Itanagar is known for its historic Ita Fort and its vibrant tribal culture, including festivals like the Losar and Nyokum."
+    },
+    "Aizawl": {
+        "culture": "Aizawl, the capital of Mizoram, is known for its rich Mizo culture, traditional festivals like Chapchar Kut, and scenic beauty."
+    },
+    "Kohima": {
+        "culture": "Kohima is known for its role in World War II, the Kohima War Cemetery, and the Hornbill Festival showcasing Naga culture."
+    },
+    "Dimapur": {
+        "culture": "Dimapur, the largest city in Nagaland, has historical sites such as the Kachari Ruins and is known for its vibrant local culture."
+    },
+    "Gangtok": {
+        "culture": "Gangtok, the capital of Sikkim, is known for its Tibetan culture, Buddhist monasteries, and festivals like Losar and Buddha Jayanti."
+    },
+    "Tura": {
+        "culture": "Tura is known for its picturesque landscapes and cultural festivals, including the Tura Winter Festival."
+    },
+    "Badami": {
+        "culture": "Badami is known for its rock-cut temples, cave temples, and the Agastya Lake, reflecting the grandeur of the Chalukya dynasty."
+    },
+    "Mahabalipuram": {
+        "culture": "Mahabalipuram is known for its rock-cut sculptures and temples, including the Shore Temple and the Pancha Rathas."
+    },
+    "Madurai": {
+        "culture": "Madurai is famous for the Meenakshi Amman Temple, one of the largest and oldest temples in India, and its rich cultural heritage."
+    },
+    "Thanjavur": {
+        "culture": "Thanjavur is known for the Brihadeeswarar Temple, a UNESCO World Heritage Site, and its traditional Tanjore paintings and crafts."
+    },
+    "Pondicherry": {
+        "culture": "Pondicherry is known for its French colonial architecture, serene beaches, and the Aurobindo Ashram."
+    },
+    "Coimbatore": {
+        "culture": "Coimbatore is known for its textile industry and proximity to historical sites like the Perur Patteeswarar Temple."
+    },
+    "Srirangapatna": {
+        "culture": "Srirangapatna, the former capital of Tipu Sultan, is known for its historical fortifications and the Ranganathaswamy Temple."
+    },
+    "Vellore": {
+        "culture": "Vellore is known for the Vellore Fort, a 16th-century fort with significant historical and architectural value."
+    },
+    "Kanchipuram": {
+        "culture": "Kanchipuram is famous for its ancient temples and silk sarees, and is often referred to as the 'City of Thousand Temples.'"
+    }
+    };
+
+    // Initialize the map and set its view to a default location
+    var map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India
+
+    // Set up the OpenStreetMap layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker
+    var marker = L.marker([20.5937, 78.9629]).addTo(map);
+
+    
+
+    // Function to zoom to a city and show cultural information
+    function zoomToCity(cityName, latlng) {
+        marker.setLatLng(latlng).setPopupContent(cityName);
+
+        // Check if the city is in the cultural data and update the popup content
+        if (culturalData[cityName]) {
+            marker.bindPopup(`<strong>${cityName}</strong><br>${culturalData[cityName].culture}`).openPopup();
+        } else {
+            marker.bindPopup(`<strong>${cityName}</strong><br>No cultural information available.`).openPopup();
+        }
+
+        map.setView(latlng, 10); // Zoom in to the location
+    }
+
+    // Add the search control to the map
+    var geocoder = L.Control.geocoder({
+        defaultMarkGeocode: false
+    })
+    .on('markgeocode', function(e) {
+        var latlng = e.geocode.center;
+        var cityName = e.geocode.name.split(',')[0]; // Extract the city name
+
+        zoomToCity(cityName, latlng);
+    })
+    .addTo(map);
+
+</script>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description"><b>Explore with us!</b>
+                        </p>
+                        <!-- <div>
+                            <a href="https://www.facebook.com/" target="blank" class="footer_social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="blank" class="footer_social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="blank" class="footer_social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="blank" class="footer_social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div> -->
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="https://github.com/ColonelGeneral/SacredSands" class="footer__link">About Us</a> 
+                            </li>
+                            <!-- <li class="footer__item">
+                                <a href="" class="footer__link">Features</a> -->
+                            </li>
+                            <li class="footer__item">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Visit more</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="https://www.mygov.in/" class="footer__link">My government</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://tourism.gov.in/" class="footer__link">Tourism</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://indianculture.gov.in/" class="footer__link">Indian Culture</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://swachhbharatmission.ddws.gov.in/" class="footer__link">Swachh Bharat</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://www.digitalindia.gov.in/" class="footer__link">Digital India</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <!-- <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2024 SacredSands All rigths reserved.</p>
+                    <!-- <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
