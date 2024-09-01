@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up form</title>
+	<link rel="stylesheet" href="sign up.css">
+</head>
+<body>
+	<div class="box">
+		<form autocomplete="off" action="insert.php">
+			<h2>Sign up</h2>
+			<div class="inputBox">
+				<input type="text" name="name" required="required">
+				<span>name</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="text" name="email" required="required">
+				<span>email</span>
+				<i></i>
+			</div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <span>password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password_re"required>
+                <span>re-enter password</span>
+                <i></i>
+            </div>
+
+
+			<input type="submit" value="sign up">
+		</form>
+	</div>
+</body>
+</html>
